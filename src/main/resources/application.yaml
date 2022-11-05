@@ -1,0 +1,18 @@
+spring:
+  security:
+    user:
+      name: hung
+      password: 123456
+  datasource:
+    url: jdbc:postgresql://localhost:5432/eazybank
+    username: docker
+    password: docker
+    hikari:
+      schema: public
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: create
+    show-sql: true
