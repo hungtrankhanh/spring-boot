@@ -16,7 +16,7 @@ public class PlayMusic {
         log.info("PlayMusic : play 2");
     }
 
-    public void play3(boolean isOk) {
-        log.info("PlayMusic : play 3 - isOk = " + isOk);
+    public void play3(boolean isK, boolean isPlayed) {
+        log.info("PlayMusic : play 3 - isOk = " + isPlayed);
     }
 }

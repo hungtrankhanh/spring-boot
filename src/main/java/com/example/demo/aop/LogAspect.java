@@ -30,8 +30,9 @@ public class LogAspect {
         log.info("End log1 for : execution time = " + elapseTime);
     }
 
-    @Before("execution(* com.example.demo.func.PlayMusic.*(boolean , ..)) && args(isPlayed,..))")
+    @Before("execution(* com.example.demo.func.PlayMusic.*(..)) && args(..,isPlayed))")
     public void log2(JoinPoint joinPoint, boolean isPlayed) throws Exception {
+        log.info("End log2 for : execution time = " + isPlayed);
         if (!isPlayed) {
             throw new Exception();
         }

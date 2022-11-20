@@ -13,7 +13,7 @@ public class DemoApplication {
 		var aa = cx.getBean(PlayMusic.class);
 		aa.play1();
 		aa.play2();
-		aa.play3(true);
+		aa.play3(false,true);
 	}
 
 }
